@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@mipmap/callout_balloon"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/badge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.40"
+            android:adjustViewBounds="true"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp"
+            android:src="@mipmap/badge"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:ellipsize="end"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

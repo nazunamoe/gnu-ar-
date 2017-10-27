@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gnuarmap.observer.com.gnuar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="8f83d98efa3dd8799213f96578a62e21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gmap_ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Lists.GMap"
+            android:label="@string/map_view_title" />
+        <activity
+            android:name=".Lists.Filtering"
+            android:label="@string/filtering_title" />
+        <activity
+            android:name=".Lists.AR_View"
+            android:label="@string/ar_title"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Lists.Dialog"
+            android:label="Dialog"/>
+
+    </application>
+
+</manifest>
